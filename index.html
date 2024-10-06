@@ -23,13 +23,13 @@
             <a class="nav-item" href="#main">
               <span class="locale">main</span>
             </a>
-            <a class="nav-item" href="#main">
+            <a class="nav-item" href="#services">
               <span class="locale">services</span>
             </a>
-            <a class="nav-item" href="#main">
+            <a class="nav-item" href="#what_we_do">
               <span class="locale">what_we_do</span>
             </a>
-            <a class="nav-item" href="#main">
+            <a class="nav-item" href="#contact_us">
               <span class="locale">contact_us</span>
             </a>
           </div>
@@ -37,7 +37,7 @@
             <span class="locale">join_us</span>
           </button>
         </div>
-        <div class="branding-section">
+        <div id="main" class="branding-section">
           <div class="branding-text">
             <h1 class="locale">branding_headline</h1>
             <p class="locale">branding_description</p>
@@ -51,7 +51,7 @@
       <!-- End Branding -->
 
       <!-- Start What Do You Get -->
-      <div class="what_do_you_get py-80">
+      <div id="services" class="what_do_you_get py-80">
         <div class="container-fluid">
           <div class="text-center">
             <h2 class="mx-auto locale">what_do_you_get</h2>
@@ -160,7 +160,7 @@
       <!-- End Vision One -->
 
       <!-- Start how we work -->
-      <div class="how_we_work py-80 position-relative">
+      <div id="what_we_do" class="how_we_work py-80 position-relative">
         <div class="position-absolute how_we_work_vector">
           <img src="./assets/what_we_work_vector.png" />
         </div>
@@ -192,6 +192,55 @@
       </div>
       <!-- End how we work -->
 
+      <!-- Start welcome all your inquiries -->
+      <div
+        id="contact_us"
+        class="welcome_all_your_inquiries position-relative py-80 position-relative"
+      >
+        <div class="position-absolute abs-img welcome_all_vector"></div>
+        <div class="container-fluid">
+          <div class="row gap-100 align-items-center">
+            <div class="d-flex flex-column gap-44 flex-1">
+              <div class="d-flex flex-column text-wrapper">
+                <h4 class="locale">welcome_all_title</h4>
+                <p class="locale">welcome_all_desc</p>
+              </div>
+
+              <form class="d-flex flex-column gap-26">
+                <div class="d-flex flex-column gap-16">
+                  <div class="d-flex gap-16">
+                    <input class="flex-1" type="text" placeholder="الاسم" />
+                    <input
+                      class="flex-1"
+                      type="text"
+                      placeholder="رقم الجوال"
+                    />
+                  </div>
+
+                  <div class="d-flex gap-16">
+                    <input class="flex-1" type="text" placeholder="الموضوع" />
+                  </div>
+
+                  <div class="d-flex gap-16">
+                    <textarea
+                      class="flex-1"
+                      type="text"
+                      placeholder="الرسالة..."
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="d-flex">
+                  <button type="submit" class="locale">send_now</button>
+                </div>
+              </form>
+            </div>
+            <div class="flex-1 position-relative"></div>
+          </div>
+        </div>
+      </div>
+      <!-- End welcome all your inquiries -->
+
       <!-- Start Footer -->
       <footer>
         <div class="part-one">
@@ -202,10 +251,10 @@
         </div>
         <div class="part-two">
           <h3 class="locale">links</h3>
-          <a href="" class="locale">main</a>
-          <a href="" class="locale">services</a>
-          <a href="" class="locale">what_we_do</a>
-          <a href="" class="locale">contact_us</a>
+          <a href="#main" class="locale">main</a>
+          <a href="#services" class="locale">services</a>
+          <a href="#what_we_do" class="locale">what_we_do</a>
+          <a href="#contact_us" class="locale">contact_us</a>
         </div>
         <div class="part-three">
           <h3 class="locale">our_platforms</h3>

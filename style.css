@@ -8,8 +8,11 @@
   --primary-color: #7d14c7;
   --primary-light-color: #7d14c7e5;
   --light-gray: #b3b3b3;
+  --second-light-gray-color: #dbdbdb;
   --second-light-gray: #686868;
   --paragraph-color: #121212;
+  --heading-color: #3c3c3c;
+  --white-color: #fff;
 }
 
 html,
@@ -109,6 +112,18 @@ body {
 
 .mt-20 {
   margin-top: 20px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-26 {
+  gap: 26px;
+}
+
+.gap-44 {
+  gap: 44px;
 }
 .gap-32 {
   gap: 32px;
@@ -319,6 +334,11 @@ body {
   padding-inline: 11%;
   background: rgba(125, 20, 199, 0.02);
 }
+/* Start how_we_work */
+.how_we_work .text-wrapper,
+.welcome_all_your_inquiries .text-wrapper {
+  gap: 8px;
+}
 
 .vision-one-images-container {
   width: 40%;
@@ -411,9 +431,11 @@ body {
 .how_we_work h4 {
   font-size: 48px;
   line-height: 57.6px;
+  color: var(--heading-color);
 }
 
-.how_we_work .text-wrapper p {
+.how_we_work .text-wrapper p,
+.welcome_all_your_inquiries .text-wrapper p {
   font-size: 18px;
   line-height: 21.6px;
   color: var(--second-light-gray);
@@ -519,3 +541,77 @@ footer h3 {
   }
 }
 /* End Footer */
+/* Start welcome all your inquiries */
+.welcome_all_your_inquiries {
+  overflow: hidden;
+  padding-bottom: 20%;
+}
+.welcome_all_your_inquiries h4 {
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--heading-color);
+}
+
+.welcome_all_your_inquiries input,
+.welcome_all_your_inquiries textarea {
+  border-radius: 9px;
+  border: 1px solid var(--second-light-gray-color);
+  outline: 0;
+  padding: 2px 12px !important;
+  height: 55px;
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 400px;
+  font-family: "Tajawal", sans-serif;
+  transition: all 0.2s linear;
+}
+.welcome_all_your_inquiries input:focus,
+.welcome_all_your_inquiries textarea:focus {
+  box-shadow: 0px 0px 1px 2px var(--primary-color);
+}
+
+.welcome_all_your_inquiries textarea {
+  padding: 16px !important;
+  height: 162px;
+}
+
+.welcome_all_your_inquiries button {
+  font-family: "Tajawal", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 40px;
+  height: 64px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  outline: 0;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* 
+.welcome_all_vector{
+  top: 13%;
+  left: 6.5%;
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  width: 720px;
+  height: 700px;
+  transform: translateX(-50%);
+  padding: 20px
+} */
+
+.abs-img {
+  top: 10px;
+  left: -25%;
+  border-radius: 1000px;
+  width: 916px;
+  height: 916px;
+  background-color: #7d14c7;
+  background-image: url(./assets/image.png);
+  background-repeat: no-repeat;
+  background-position: 96% 15px !important;
+  background-size: contain;
+}
+
+/* End welcome all your inquiries */
