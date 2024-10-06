@@ -6,6 +6,8 @@
 
 :root {
   --primary-color: #7d14c7;
+  --light-gray: #B3B3B3;
+  --paragraph-color: #121212
 }
 
 html,
@@ -24,6 +26,117 @@ body {
   font-style: normal;
 }
 
+/* global */
+.d-flex{
+  display: flex
+}
+
+.flex-column{
+  flex-direction: column
+}
+
+.align-items-start{
+  align-items: flex-start
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap
+}
+.py-80{
+  padding-top: 80px;
+  padding-bottom: 80px
+}
+
+.text-center{
+  text-align: center
+}
+
+.justify-center{
+  justify-content: center
+}
+
+.mx-auto{
+  margin-right: auto;
+  margin-left: auto
+}
+
+.mt-30{
+  margin-top: 30px
+}
+
+.col-3 {
+  flex: 1
+}
+
+.p-24{
+  padding: 24px
+}
+
+
+/* Grid */
+.text-right{
+  text-align: right
+}
+.container-fluid {
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.gap-32{
+  gap: 32px
+}
+
+.gap-33{
+  gap: 33px
+}
+
+.gap-12{
+  gap: 12px
+}
+/* Small devices (sm) */
+@media (min-width: 576px) {
+  .container-fluid {
+    max-width: 540px;
+  }
+}
+
+/* Medium devices (md) */
+@media (min-width: 768px) {
+  .container-fluid {
+    max-width: 720px;
+  }
+
+  .col-md-3 {
+    flex: 0 0 auto;
+  }
+}
+
+/* Large devices (lg) */
+@media (min-width: 992px) {
+  .container-fluid {
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (xl) */
+@media (min-width: 1200px) {
+ .container-fluid {
+    max-width: 1140px;
+  }
+}
+
+/* Extra extra large devices (xxl) */
+@media (min-width: 1400px) {
+  .container-fluid {
+    max-width: 1320px;
+  }
+}
+/* Grid */
+/* global */
 .app-bar {
   display: flex;
   justify-content: space-between;
@@ -67,3 +180,29 @@ body {
 .branding {
   background: linear-gradient(0deg, #f2c6c5 0%, #c9b9fa 47%, #ffffff 100%);
 }
+
+/* Start What Do You Get */
+
+.what_do_you_get h2{
+  color: var(--primary-color);
+  font-size: 38px;
+}
+
+.what_do_you_get .what_do_card{
+  border: 1px solid var(--light-gray);
+  border-radius: 20px
+}
+
+.what_do_card .icon-wrapper{
+  background-color: #7D14C70D;
+  display: inline-flex;
+  padding: 21px;
+  border-radius: 100%
+  
+}
+
+.what_do_you_get p{
+  font-size: 14px;
+  color: var(--paragraph-color)
+}
+/* End What Do You Get */
