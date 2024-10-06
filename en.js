@@ -16,6 +16,9 @@ let en = {
     how_we_work_desc: "At Al-Khuzami, we provide an integrated platform for fundraising and improving charitable work. We facilitate online donation processes, allowing donors to support projects that matter to them with ease. When using our services, you will get accurate reports on the impact of your donations, and ongoing support from our team to ensure a better experience.” Seamless and efficient Join us today and be part of a positive change in society.",
     welcome_all_title: "We welcome all your inquiries and are happy to serve you. Contact us for any assistance.",
     welcome_all_desc: "Have a question? We're here to help! Contact us by phone or email. We'd love to hear from you and will respond as quickly as possible. Feel free to ask any questions or share your thoughts.",
-    send_now: "Send now"
-
+    send_now: "Send now",
+    name: "name",
+    phone: "phone",
+    subject: "subject",
+    message: "message"
 }
