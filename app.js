@@ -19,7 +19,7 @@ Array.from(document.querySelectorAll(".locale")).forEach(element => {
         console.warn(`${element.textContent} not found in ${locale}`)
         return;
     }
-    element.textContent = localeValue;
+    element.innerHTML = localeValue;
 });
 
 const navItems = Array.from(document.querySelectorAll(".app-bar .nav-item"));

@@ -60,10 +60,37 @@ body {
   cursor: pointer;
 }
 
-.app-bar .join-us:hover {
+.join-us:hover {
   background: #540694;
 }
 
 .branding {
-  background: linear-gradient(0deg, #f2c6c5 0%, #c9b9fa 47%, #ffffff 100%);
+  background: linear-gradient(135deg, #f2c6c5 0%, #c9b9fa 47%, #ffffff 100%);
+}
+
+.branding .join-us {
+  margin-top: 1.5rem;
+}
+
+.branding-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-block: 6.875rem;
+}
+
+.branding-image {
+  height: 675px;
+}
+
+.branding-text {
+  width: 50%;
+}
+
+.branding-text h1 {
+  font-size: 3.75rem;
+}
+.branding-text p {
+  font-size: 1.625rem;
+  color: #2e2e2e;
 }
