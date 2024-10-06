@@ -94,3 +94,14 @@ body {
   font-size: 1.625rem;
   color: #2e2e2e;
 }
+
+.vision-one {
+  padding-block: 181px;
+}
+.images-container {
+  position: relative;
+}
+
+.images-container img {
+  position: absolute;
+}
