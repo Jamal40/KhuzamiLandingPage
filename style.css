@@ -248,12 +248,17 @@ body {
   }
   .logo {
     height: 30px;
+    margin-left: auto
   }
   .app-bar > img.mobile {
     width: 10px;
     position: absolute;
     left: 25px;
     top: 25px;
+  }
+
+  .col-3{
+    flex: auto
   }
 }
 
