@@ -184,10 +184,16 @@ body {
 /* Start Navbar */
 .app-bar {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+}
+
+.mobile {
+  display: none;
 }
 
 .logo {
@@ -227,6 +233,11 @@ body {
   .app-bar {
     flex-direction: column;
     gap: 20px;
+    height: 60px;
+    overflow-y: hidden;
+  }
+  .mobile {
+    display: block;
   }
   .navigations {
     flex-direction: column;
@@ -237,6 +248,12 @@ body {
   }
   .logo {
     height: 30px;
+  }
+  .app-bar > img.mobile {
+    width: 10px;
+    position: absolute;
+    left: 25px;
+    top: 25px;
   }
 }
 
@@ -330,27 +347,20 @@ body {
 .vision-one {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-block: 50px;
   padding-inline: 11%;
   background: rgba(125, 20, 199, 0.02);
 }
+
 /* Start how_we_work */
 .how_we_work .text-wrapper,
 .welcome_all_your_inquiries .text-wrapper {
   gap: 8px;
 }
 
-.vision-one-images-container {
+.what-we-do-img {
   width: 40%;
-  position: relative;
-  width: 520px;
-  height: 622px;
-}
-
-.vision-one-images-container img {
-  position: absolute;
-  top: 214px;
-  left: 60px;
 }
 
 .vision-one-text {
@@ -372,54 +382,21 @@ body {
   padding-block: 5px;
 }
 
-@media (max-width: 1200px) {
-  .vision-one-images-container {
-    transform: scale(0.75);
-  }
-  .vision-one {
-    padding-inline: 8%;
-  }
-  .vision-one-text {
-    transform: scale(0.75);
-  }
-}
-
 @media (max-width: 768px) {
   .vision-one {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    padding: 4%;
   }
-  .vision-one-images-container {
-    transform: scale(1);
-    width: 80%;
+  .what-we-do-img {
+    width: 90%;
   }
+
   .vision-one-text {
     margin-top: 5rem;
-    transform: scale(1);
-    width: 80%;
+    width: 90%;
   }
-}
-
-@media (max-width: 650px) {
-  .vision-one-images-container {
-    transform: scale(0.5);
-  }
-  .vision-one-images-container img {
-    left: 0px;
-  }
-}
-
-.ellipse {
-}
-.image {
-  transform: rotate(180deg) translateY(100%) translateY(-60px) translateX(60px);
-}
-.image_1 {
-  transform: translateX(120px);
-}
-.image_2 {
-  transform: rotate(180deg) translateY(-100%) translateY(+120px);
 }
 
 /* End Vision */
