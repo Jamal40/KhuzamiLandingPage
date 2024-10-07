@@ -36,7 +36,7 @@ let en = {
     "At Al Khuzami, we offer a comprehensive platform for fundraising and improving charitable work. We facilitate online donation processes, allowing donors to easily support the projects that matter to them. When you use our services, you will receive accurate reports on the impact of your donations, and ongoing support from our team to ensure a smooth and effective experience. Join us today and be part of a positive change in the community.",
   summary:
     "Sadeem Al Khuzami seeks to make charitable work more effective by facilitating donations and enhancing communication between donors and those in need. Join us on our journey to make a positive impact in the community.",
-  find_us: "You can find us on:",
+  find_us: "You can find us here:",
   our_platforms: "Our Platforms",
   links: "Links",
   welcome_all_title:
@@ -48,4 +48,8 @@ let en = {
   phone: "Phone Number",
   subject: "Subject",
   message: "Message...",
+  company: "Sadeem Al Khuzami Technology Company",
+  address: "Makkah Al Mukarramah - Al Awali",
+  company_email: "info@khzama.sa",
+  company_phone: "+966 55 558 3442",
 };

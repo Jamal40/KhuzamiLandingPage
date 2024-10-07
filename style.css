@@ -288,6 +288,7 @@ body {
   align-items: center;
   justify-content: space-around;
   padding-block: 6.875rem;
+  padding: 1em;
 }
 
 .branding-image {
@@ -304,6 +305,10 @@ body {
 .branding-text p {
   font-size: 1.625rem;
   color: #2e2e2e;
+}
+
+.join-us {
+  visibility: hidden;
 }
 
 @media (max-width: 900px) {

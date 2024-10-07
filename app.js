@@ -52,5 +52,5 @@ collapse.addEventListener("click", () => {
 expand.addEventListener("click", () => {
   expand.style.display = "none";
   collapse.style.display = "block";
-  appBar.style.height = "280px";
+  appBar.style.height = "200px";
 });
