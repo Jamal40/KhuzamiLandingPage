@@ -215,10 +215,10 @@ body {
 }
 
 .join-us {
-  background: #7d14c7;
+  background: var(--primary-color);
   border-radius: 10px;
   border-width: 0;
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 1.125rem;
   padding-inline: 40px;
   padding-block: 10px;
@@ -248,7 +248,7 @@ body {
   }
   .logo {
     height: 30px;
-    margin-left: auto
+    margin-left: auto;
   }
   .app-bar > img.mobile {
     width: 10px;
@@ -257,8 +257,8 @@ body {
     top: 25px;
   }
 
-  .col-3{
-    flex: auto
+  .col-3 {
+    flex: auto;
   }
 }
 
@@ -267,7 +267,12 @@ body {
 /* Start Branding Section */
 
 .branding {
-  background: linear-gradient(135deg, #f2c6c5 0%, #c9b9fa 47%, #ffffff 100%);
+  background: linear-gradient(
+    135deg,
+    #f2c6c5 0%,
+    #c9b9fa 47%,
+    var(--white-color) 100%
+  );
 }
 
 .branding-section .join-us {
@@ -373,7 +378,7 @@ body {
 }
 
 .vision-one-text h2 {
-  color: #3c3c3c;
+  color: var(--heading-color);
   font-size: 2.375rem;
   font-weight: 700;
   margin-bottom: 1.1875rem;
@@ -405,91 +410,90 @@ body {
   .what_do_card,
   .what_do_card .card-wrapper {
     justify-content: center;
-    align-items: center
+    align-items: center;
   }
 
-  .what_do_card img{
+  .what_do_card img {
     width: 35px;
-    height: 35px
+    height: 35px;
   }
 
-  .gap-32{
-    gap: 16px
+  .gap-32 {
+    gap: 16px;
   }
 
-  .what_do_you_get p{
-    text-align: center
+  .what_do_you_get p {
+    text-align: center;
   }
 
-  .what_do_you_get h2{
+  .what_do_you_get h2 {
     font-size: 24px;
   }
 
-  .how_we_work .row{
-    flex-direction: column
-  }
-
-  .how_we_work h4{
-    font-size: 24px !important;
-    line-height: 1.4 !important
-  }
- 
-  .how_we_work .text-wrapper p{
-    font-size: 14px !important
-  }
-
-  .how_we_work .how_we_work_vector{
-    right: -25px
-  }
-
-
-  .how_we_work .text-wrapper{
-    padding: 0 20px
-  }
-
-  .how_we_work .video-wrapper img.vid-thumb{
-    min-height: 230px !important
-  }
-
-  .how_we_work .video-wrapper::after{
-    height: 101% !important;
-    width: 103% !important;
-    left: -2% !important
-  }
-
-  .abs-img{
-    display: none
-  }
-
-  .welcome_all_your_inquiries h4{
-    font-size: 24px !important;
-    line-height: 1.4 !important
-  }
-
-  .welcome_all_your_inquiries .d-flex,
-  .welcome_all_your_inquiries .row{
+  .how_we_work .row {
     flex-direction: column;
   }
 
-  .welcome_all_your_inquiries p{
-    font-size: 14px !important
+  .how_we_work h4 {
+    font-size: 24px !important;
+    line-height: 1.4 !important;
   }
 
-  .video-wrapper .play-wrapper{
+  .how_we_work .text-wrapper p {
+    font-size: 14px !important;
+  }
+
+  .how_we_work .how_we_work_vector {
+    right: -25px;
+  }
+
+  .how_we_work .text-wrapper {
+    padding: 0 20px;
+  }
+
+  .how_we_work .video-wrapper img.vid-thumb {
+    min-height: 230px !important;
+  }
+
+  .how_we_work .video-wrapper::after {
+    height: 101% !important;
+    width: 103% !important;
+    left: -2% !important;
+  }
+
+  .abs-img {
+    display: none;
+  }
+
+  .welcome_all_your_inquiries h4 {
+    font-size: 24px !important;
+    line-height: 1.4 !important;
+  }
+
+  .welcome_all_your_inquiries .d-flex,
+  .welcome_all_your_inquiries .row {
+    flex-direction: column;
+  }
+
+  .welcome_all_your_inquiries p {
+    font-size: 14px !important;
+  }
+
+  .video-wrapper .play-wrapper {
     display: flex;
-    align-items: center
+    align-items: center;
   }
-  .video-wrapper .play-wrapper button{
+  .video-wrapper .play-wrapper button {
     width: 100px !important;
-    height: 100px !important
+    height: 100px !important;
   }
 
-  .welcome_all_your_inquiries{
-    padding-top: 0px !important
+  .welcome_all_your_inquiries {
+    padding-top: 0px !important;
   }
 
-  .welcome_all_your_inquiries textarea{
-    min-height: 200px !important
+  .welcome_all_your_inquiries textarea {
+    min-height: 200px !important;
   }
 }
 
@@ -678,7 +682,7 @@ footer h3 {
   border-radius: 1000px;
   width: 916px;
   height: 916px;
-  background-color: #7d14c7;
+  background-color: var(--primary-color);
   background-image: url(./assets/image.png);
   background-repeat: no-repeat;
   background-position: 96% 15px !important;
