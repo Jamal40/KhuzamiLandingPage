@@ -14,10 +14,19 @@ const getCurrentLanguage = () => {
 var locale = getCurrentLanguage();
 
 Array.from(document.querySelectorAll(".locale")).forEach(element => {
-    const localeValue = locale[element.textContent];
+    let localeValue = locale[element.textContent];
+
+    const isInput = ['TEXTAREA', 'INPUT'].includes(element.tagName)
+    if (isInput) {
+        localeValue = locale[element.placeholder];
+    }
     if (!localeValue) {
         console.warn(`${element.textContent} not found in ${locale}`)
         return;
+    }
+    if (isInput) {
+        element.placeholder = localeValue;
+        return
     }
     element.innerHTML = localeValue;
 });
