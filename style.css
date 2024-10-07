@@ -399,6 +399,95 @@ body {
     transform: scale(1);
     width: 80%;
   }
+  .what_do_card,
+  .what_do_card .card-wrapper {
+    justify-content: center;
+    align-items: center
+  }
+
+  .what_do_card img{
+    width: 35px;
+    height: 35px
+  }
+
+  .gap-32{
+    gap: 16px
+  }
+
+  .what_do_you_get p{
+    text-align: center
+  }
+
+  .what_do_you_get h2{
+    font-size: 24px;
+  }
+
+  .how_we_work .row{
+    flex-direction: column
+  }
+
+  .how_we_work h4{
+    font-size: 24px !important;
+    line-height: 1.4 !important
+  }
+ 
+  .how_we_work .text-wrapper p{
+    font-size: 14px !important
+  }
+
+  .how_we_work .how_we_work_vector{
+    right: -25px
+  }
+
+
+  .how_we_work .text-wrapper{
+    padding: 0 20px
+  }
+
+  .how_we_work .video-wrapper img.vid-thumb{
+    min-height: 230px !important
+  }
+
+  .how_we_work .video-wrapper::after{
+    height: 101% !important;
+    width: 103% !important;
+    left: -2% !important
+  }
+
+  .abs-img{
+    display: none
+  }
+
+  .welcome_all_your_inquiries h4{
+    font-size: 24px !important;
+    line-height: 1.4 !important
+  }
+
+  .welcome_all_your_inquiries .d-flex,
+  .welcome_all_your_inquiries .row{
+    flex-direction: column;
+  }
+
+  .welcome_all_your_inquiries p{
+    font-size: 14px !important
+  }
+
+  .video-wrapper .play-wrapper{
+    display: flex;
+    align-items: center
+  }
+  .video-wrapper .play-wrapper button{
+    width: 100px !important;
+    height: 100px !important
+  }
+
+  .welcome_all_your_inquiries{
+    padding-top: 0px !important
+  }
+
+  .welcome_all_your_inquiries textarea{
+    min-height: 200px !important
+  }
 }
 
 @media (max-width: 650px) {
@@ -558,7 +647,7 @@ footer h3 {
   border: 1px solid var(--second-light-gray-color);
   outline: 0;
   padding: 2px 12px !important;
-  height: 55px;
+  min-height: 55px;
   font-size: 16px;
   line-height: 19.2px;
   font-weight: 400px;
